@@ -47,7 +47,7 @@
   display: block;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
-  font-size: 2.2em;
+  font-size: 2.3em;
   font-weight: 600;
   text-decoration: none;
   line-height: 1.4em;
@@ -154,6 +154,13 @@
   background-size: 100% 100%;
 }
 
+.home p {
+  font-family: 'Lora';
+  font-size: 60px;
+  font-weight: bold;
+  margin: 60px;
+}
+
 /*  Projects
 -----------------------------------*/
 .projects {
@@ -184,6 +191,219 @@
 @media only screen and (max-width: 767px) {
   .page__description h1 {
     margin-top: 100px;
+  }
+}
+
+/*****************************************************************
+~ Skills Section
+******************************************************************/
+.container-skills {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 500px;
+  left: 100px;
+  top: 100px;
+}
+
+.container-skills h2 {
+  color: #fff;
+}
+
+.container-skills .skills {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  padding: 24px 10px 18px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#616161), color-stop(10%, #333), to(#222));
+  background: linear-gradient(#616161 0%, #333 10%, #222);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container-skills .skills:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container-skills:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.container-skills .Name {
+  position: relative;
+  width: 110px;
+  text-align: right;
+  color: #fff;
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+
+.container-skills .Value {
+  position: relative;
+  width: 40px;
+  text-align: left;
+  color: #fff;
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+
+.container-skills .percent {
+  position: relative;
+  width: calc(100% - 150px);
+  height: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background: #151515;
+  -webkit-box-shadow: inset 0 0 10px #000;
+          box-shadow: inset 0 0 10px #000;
+  overflow: hidden;
+}
+
+.container-skills .percent .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: inset 0 0 2px #000;
+          box-shadow: inset 0 0 2px #000;
+  -webkit-animation: skills_animate 4s ease-in-out forwards;
+          animation: skills_animate 4s ease-in-out forwards;
+}
+
+@-webkit-keyframes skills_animate {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes skills_animate {
+  from {
+    width: 0;
+  }
+}
+
+.container-skills .skills:nth-child(2) .percent .progress {
+  background: linear-gradient(45deg, #1fe6ff, #673AB7);
+}
+
+.container-skills .skills:nth-child(3) .percent .progress {
+  background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+
+.container-skills .skills:nth-child(4) .percent .progress {
+  background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+
+.container-skills .skills:nth-child(5) .percent .progress {
+  background: linear-gradient(45deg, #22ffde, #2196F3);
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin: 60px;
+  font-family: "Lora";
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  -webkit-animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
