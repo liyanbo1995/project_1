@@ -439,4 +439,24 @@
   margin-left: 5px;
   font-weight: lighter;
 }
+
+.container-about .personal_information i {
+  font-size: 1.5em;
+  color: #8A2BE2;
+  margin-left: 5px;
+}
+
+.container-about .personal_information p {
+  color: #777777;
+  font-family: "Roto" sans-serif;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.container-about .social_media {
+  color: grey;
+  font-size: 3em;
+  margin-top: 10px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
