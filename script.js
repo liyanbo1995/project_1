@@ -44,3 +44,15 @@ $('.contact_link').click(function() {
     $('.contact').addClass('fadeIn');
   }, 1500);
 });
+
+/*animation for skill bar*/
+        var i = 0;
+        function makeProgress(){
+            if(i < 75){
+                i +=1;
+                $(".progress-bar").css("width", i + "%").text(i + " %");
+            }
+            // Wait for sometime before running this script again
+            setTimeout("makeProgress()",75);
+        }
+        makeProgress();

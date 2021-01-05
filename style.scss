@@ -398,9 +398,10 @@
 .container-skills{
   @extend .container-about;
   background-color: #fff;
+ 
   h5{
     color:#000;
-    margin-left: -570px;
+    margin-left: -565px;
    
   }
   i{
@@ -425,5 +426,20 @@
     text-align:center;
     line-height:35px;
     }
+  }
+  .progress{
+    margin:20px;
+    height: 30px;
+    color: hsl(193deg, 84%,52%);
+  }
+  h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 470px;
+   
+  }
+  .skill_name{
+    margin-left: 20px;
+   
   }
 }
