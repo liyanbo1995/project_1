@@ -47,12 +47,27 @@ $('.contact_link').click(function() {
 
 /*animation for skill bar*/
         var i = 0;
-        function makeProgress(){
-            if(i < 75){
+        function makeProgressHtml(){
+            if(i < 90){
                 i +=1;
-                $(".progress-bar").css("width", i + "%").text(i + " %");
+                $(".progress-bar_html_css").css("width", i + "%");
             }
             // Wait for sometime before running this script again
-            setTimeout("makeProgress()",75);
+            setTimeout("makeProgressHtml()",100);
         }
-        makeProgress();
+        function makeProgressJsReact(){
+          if(i < 80){
+              i +=1;
+              $(".progress-bar_js_react").css("width", i + "%");
+          }
+          // Wait for sometime before running this script again
+          setTimeout("makeProgressJsReact()",100);
+      }
+        
+        $(document).ready(function(){
+          $("div").scroll(function(){
+            makeProgressHtml();
+            makeProgressJsReact();
+          });
+        });
+        //makeProgress();
