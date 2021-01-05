@@ -93,7 +93,7 @@
 /*  home
 -----------------------------------*/
 .home{
-  background-image: url(/assets/background1.jpg);
+  background-image: url(assets/background1.jpg);
   background-size: 100% 100%;
   p{
     font-family: 'Lora';
@@ -141,6 +141,7 @@
 /*****************************************************************
 ~ Skills Section
 ******************************************************************/
+/*
 .container-skills{
   position: relative;
   display:flex;
@@ -258,7 +259,7 @@
 }
 
 
-
+*/
 
 
 
@@ -392,4 +393,37 @@
 
   }
   
+}
+
+.container-skills{
+  @extend .container-about;
+  background-color: #fff;
+  h5{
+    color:#000;
+    margin-left: -570px;
+   
+  }
+  i{
+    color:black;
+  }
+  .timeline{
+    border-left: 1px dashed hsl(193deg, 84%,52%);
+    margin-left:20px;
+    margin-bottom: 30px;
+    .timeline-box{
+      padding-left:40px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+  .timeline-icon{
+    left:-18px;
+    top:0;
+    background-color:#20bfeb;
+    position: absolute;
+    width: 35px;
+    z-index:1;
+    text-align:center;
+    line-height:35px;
+    }
+  }
 }
