@@ -133,15 +133,40 @@
 /*  home
 -----------------------------------*/
 .home {
-  background-image: url(assets/background1.jpg);
+  background-image: url(assets/header-background.jpg);
   background-size: 100% 100%;
+  /*p{
+    font-family: 'Lora';
+    font-size: 60px;
+    font-weight: bold;
+    margin:60px;
+  }*/
 }
 
-.home p {
-  font-family: 'Lora';
-  font-size: 60px;
-  font-weight: bold;
-  margin: 60px;
+.home .home-main_section {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.home .home-main_section .hello, .home .home-main_section .developer {
+  font-family: "Poppins";
+  font-size: 32px;
+  margin: 0 0 16px;
+}
+
+.home .home-main_section .developer {
+  font-size: 72px;
+  margin: 0 0 24px;
+}
+
+.home .home-main_section .typewrite {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 40px;
 }
 
 /*  Projects
@@ -192,7 +217,7 @@
   position: relative;
   z-index: 0;
   border-radius: 10px;
-  margin: 60px;
+  margin-top: 100px;
   font-family: "Lora";
   font-weight: bold;
   font-size: 15px;
@@ -216,6 +241,7 @@
   -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
   border-radius: 10px;
+  opacity: 1;
 }
 
 .glow-on-hover:active {
@@ -226,10 +252,10 @@
   background: transparent;
 }
 
+/*
 .glow-on-hover:hover:before {
-  opacity: 1;
-}
-
+    opacity: 1;
+}*/
 .glow-on-hover:after {
   z-index: -1;
   content: '';
@@ -267,8 +293,8 @@
 }
 
 .container-about, .container-skills, .container-projects {
-  margin: 40px auto;
-  width: 1400px;
+  margin: 40px 40px;
+  width: auto;
   height: auto;
   background-color: #fff;
   border-radius: 10px;
@@ -396,8 +422,9 @@
 }
 
 .container-projects img {
-  height: 175px;
-  width: 175px;
+  height: 50%;
+  width: 50%;
+  margin-left: 80px;
 }
 
 .container-projects .hovereffect, .container-projects .hovereffect_project_link {

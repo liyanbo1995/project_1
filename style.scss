@@ -2,6 +2,8 @@
 	box-sizing:border-box;
 	padding:0;
   margin:0;
+  
+  
 }
   
 // styles
@@ -93,14 +95,43 @@
 /*  home
 -----------------------------------*/
 .home{
-  background-image: url(assets/background1.jpg);
+  background-image: url(assets/header-background.jpg);
   background-size: 100% 100%;
-  p{
+  /*p{
     font-family: 'Lora';
     font-size: 60px;
     font-weight: bold;
     margin:60px;
+  }*/
+  .home-main_section{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    .hello{
+      font-family:"Poppins";
+      font-size: 32px;
+      margin: 0 0 16px;
+    }
+    .developer{
+      @extend .hello;
+      font-size: 72px;
+      margin: 0 0 24px;
+  
+    }
+    .typewrite{
+      color:#fff;
+      font-family: "Poppins";
+      font-size: 40px;
+    }
+    
+
   }
+  
+  
+
   
 }
 /*  Projects
@@ -149,7 +180,7 @@
     position: relative;
     z-index: 0;
     border-radius: 10px;
-    margin: 60px;
+    margin-top: 100px;
     font-family: "Lora";
     font-weight: bold;
     font-size: 15px;
@@ -170,6 +201,7 @@
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
+    opacity: 1;
 }
 
 .glow-on-hover:active {
@@ -179,10 +211,10 @@
 .glow-on-hover:active:after {
     background: transparent;
 }
-
+/*
 .glow-on-hover:hover:before {
     opacity: 1;
-}
+}*/
 
 .glow-on-hover:after {
     z-index: -1;
@@ -196,6 +228,7 @@
     border-radius: 10px;
 }
 
+
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
@@ -203,8 +236,8 @@
 }
 
 .container-about{
-  margin:40px auto;
-  width:1400px;
+  margin:40px 40px;
+  width:auto;
   height:auto;
   background-color:#fff;
   border-radius:10px;
@@ -329,8 +362,9 @@
     margin-left: 25px;
   }
   img{
-    height: 175px;
-    width: 175px;
+    height: 50%;
+    width: 50%;
+    margin-left: 80px;
   }
   .hovereffect {
     width:100%;
@@ -380,3 +414,6 @@
       margin-right:150px;
     }
 }
+
+
+
