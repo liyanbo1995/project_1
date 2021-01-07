@@ -24,51 +24,6 @@
   text-align: center;
 }
 
-.page__style li {
-  list-style: none;
-  position: relative;
-  display: block;
-  color: transparent;
-  -webkit-text-stroke: 1px #fff;
-  font-size: 2.3em;
-  font-weight: 600;
-  text-decoration: none;
-  line-height: 1.4em;
-}
-
-.page__style li:hover {
-  color: #fff;
-  -webkit-text-stroke: 1px #000;
-  -webkit-transition: 0.5;
-  transition: 0.5;
-  cursor: pointer;
-}
-
-.page__style li::before, .page__style li::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.page__style li:hover::before {
-  color: #f00;
-  z-index: 1;
-  -webkit-text-stroke: 1px #000;
-  -webkit-transform: translate(3px, -3px);
-          transform: translate(3px, -3px);
-}
-
-.page__style li:hover::after {
-  color: #0ff;
-  z-index: 2;
-  -webkit-text-stroke: 1px #000;
-  -webkit-transform: translate(6px, -6px);
-          transform: translate(6px, -6px);
-}
-
 .animate_content {
   -webkit-animation: animate 3s ease;
           animation: animate 3s ease;
@@ -144,12 +99,7 @@
 }
 
 .home .home-main_section {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 200px auto;
 }
 
 .home .home-main_section .hello, .home .home-main_section .developer {
@@ -293,7 +243,7 @@
 }
 
 .container-about, .container-skills, .container-projects {
-  margin: 40px 40px;
+  margin: 100px 40px;
   width: auto;
   height: auto;
   background-color: #fff;
@@ -360,6 +310,7 @@
 
 .container-skills {
   background-color: #fff;
+  padding: 40px 40px;
 }
 
 .container-skills h5 {
@@ -412,6 +363,7 @@
 }
 
 .container-projects {
+  padding: 40px 40px;
   background-color: #fff;
 }
 
@@ -424,13 +376,11 @@
 .container-projects img {
   height: 50%;
   width: 50%;
-  margin-left: 80px;
 }
 
 .container-projects .hovereffect, .container-projects .hovereffect_project_link {
   width: 100%;
   height: 100%;
-  float: left;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -472,6 +422,6 @@
 }
 
 .container-projects .projects_explain {
-  margin-right: 150px;
+  margin-right: 125px;
 }
 /*# sourceMappingURL=style.css.map */

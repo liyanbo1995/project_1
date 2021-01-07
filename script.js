@@ -129,3 +129,4 @@ $('.contact_link').click(function() {
           css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid}";
           document.body.appendChild(css);
       };
+
