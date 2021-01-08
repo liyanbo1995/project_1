@@ -242,7 +242,7 @@
   }
 }
 
-.container-about, .container-skills, .container-projects {
+.container-about, .container-skills, .container-projects, .container-contact {
   margin: 100px 40px;
   width: auto;
   height: auto;
@@ -251,14 +251,14 @@
   position: relative;
 }
 
-.container-about img, .container-skills img, .container-projects img {
+.container-about img, .container-skills img, .container-projects img, .container-contact img {
   margin: 20px;
   width: 400px;
   border-radius: 20px;
   /*Important!!! using flex:1 to show the ratio of flex*/
 }
 
-.container-about h6, .container-skills h6, .container-projects h6 {
+.container-about h6, .container-skills h6, .container-projects h6, .container-contact h6 {
   margin-top: 60px;
   font-family: "Roto" sans-serif;
   font-size: 14px;
@@ -266,13 +266,13 @@
   font-style: italic;
 }
 
-.container-about h3, .container-skills h3, .container-projects h3 {
+.container-about h3, .container-skills h3, .container-projects h3, .container-contact h3 {
   font-size: 48px;
   font-family: "Heebo";
   color: #222222;
 }
 
-.container-about h4, .container-skills h4, .container-projects h4 {
+.container-about h4, .container-skills h4, .container-projects h4, .container-contact h4 {
   color: #222222;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, Open Sans, 'Helvetica Neue', sans-serif;
   font-size: 16px;
@@ -280,7 +280,7 @@
   font-weight: bold;
 }
 
-.container-about p, .container-skills p, .container-projects p {
+.container-about p, .container-skills p, .container-projects p, .container-contact p {
   color: #777777;
   font-family: "Roto" sans-serif;
   font-size: 16px;
@@ -288,20 +288,20 @@
   font-weight: lighter;
 }
 
-.container-about .personal_information i, .container-skills .personal_information i, .container-projects .personal_information i {
+.container-about .personal_information i, .container-skills .personal_information i, .container-projects .personal_information i, .container-contact .personal_information i {
   font-size: 1.5em;
-  color: #8A2BE2;
+  color: #20bfeb;
   margin-left: 5px;
 }
 
-.container-about .personal_information p, .container-skills .personal_information p, .container-projects .personal_information p {
+.container-about .personal_information p, .container-skills .personal_information p, .container-projects .personal_information p, .container-contact .personal_information p {
   color: #777777;
   font-family: "Roto" sans-serif;
   font-size: 20px;
   margin-left: 10px;
 }
 
-.container-about .social_media, .container-skills .social_media, .container-projects .social_media {
+.container-about .social_media, .container-skills .social_media, .container-projects .social_media, .container-contact .social_media {
   color: grey;
   font-size: 3em;
   margin-top: 10px;
@@ -423,5 +423,52 @@
 
 .container-projects .projects_explain {
   margin-right: 125px;
+}
+
+.container-contact {
+  background-color: #fff;
+  padding: 40px 40px;
+}
+
+.container-contact h5 {
+  color: black;
+  font-size: 35px;
+  margin-left: 25px;
+}
+
+.container-contact label {
+  color: #000;
+  padding: 12px 12px 12px 12px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container-contact input[type=text], .container-contact select, .container-contact textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.container-contact input[type=submit] {
+  background-color: #20bfeb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.container-contact .information {
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.container-contact .map {
+  border-radius: 10px;
+  padding-right: 50px;
 }
 /*# sourceMappingURL=style.css.map */
