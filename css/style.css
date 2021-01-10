@@ -7,6 +7,17 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .home .home-main_section {
+    margin: 200px auto;
+  }
+  .home .home-main_section .home-main_section_introduction, .home .home-main_section .home-main_section_developer {
+    font-family: "Poppins";
+    font-size: 22px;
+    margin: auto auto;
+  }
+}
+
 *, :before, :after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

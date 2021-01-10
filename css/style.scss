@@ -7,6 +7,19 @@
   }
 }
 
+@media only screen and (max-width: 500px){
+  .home{
+    .home-main_section{
+      margin: 200px auto;
+      .home-main_section_introduction{
+        font-family:"Poppins";
+        font-size: 22px;
+        margin: auto auto;
+      }
+    }
+  }
+}
+
 *, :before, :after{ 
 	box-sizing:border-box;
 	padding:0;
@@ -195,11 +208,11 @@
       margin-left: 10px;
     }
   }
-  .social_media{
-    color: grey;
-    font-size: 3em; 
-    margin-top: 10px;
-    cursor: pointer;
+    .social_media{
+      color: grey;
+      font-size: 3em; 
+      margin-top: 10px;
+      cursor: pointer;
   }
 }
 
