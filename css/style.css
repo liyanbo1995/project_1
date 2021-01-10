@@ -88,7 +88,7 @@
 /*  home
 -----------------------------------*/
 .home {
-  background-image: url(assets/header-background.jpg);
+  background-image: url(../assets/header-background.jpg);
   background-size: 100% 100%;
   /*p{
     font-family: 'Lora';
@@ -122,28 +122,28 @@
 /*  Projects
 -----------------------------------*/
 .projects {
-  background-image: url(assets/sky.jpeg);
+  background-image: url(../assets/sky.jpeg);
   background-repeat: no-repeat;
 }
 
 /*  Skills
 -----------------------------------*/
 .skills {
-  background-image: url(assets/sky.jpeg);
+  background-image: url(../assets/sky.jpeg);
   background-repeat: no-repeat;
 }
 
 /*  About
 -----------------------------------*/
 .about {
-  background-image: url(assets/sky.jpeg);
+  background-image: url(../assets/sky.jpeg);
   background-repeat: no-repeat;
 }
 
 /*  Contact
 -----------------------------------*/
 .contact {
-  background-image: url(assets/sky.jpeg);
+  background-image: url(../assets/sky.jpeg);
   background-repeat: no-repeat;
 }
 
