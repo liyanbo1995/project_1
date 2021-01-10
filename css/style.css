@@ -1,3 +1,12 @@
+/*****************************************************************
+~ Mobile media-queries (max-width: 767px)
+******************************************************************/
+@media only screen and (max-width: 767px) {
+  .page__description h1 {
+    margin-top: 100px;
+  }
+}
+
 *, :before, :after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,6 +14,7 @@
   margin: 0;
 }
 
+/*page styles*/
 .page__style {
   font-family: OpenSans-Regular, sans-serif;
   position: fixed;
@@ -90,25 +100,19 @@
 .home {
   background-image: url(../assets/header-background.jpg);
   background-size: 100% 100%;
-  /*p{
-    font-family: 'Lora';
-    font-size: 60px;
-    font-weight: bold;
-    margin:60px;
-  }*/
 }
 
 .home .home-main_section {
   margin: 200px auto;
 }
 
-.home .home-main_section .hello, .home .home-main_section .developer {
+.home .home-main_section .home-main_section_introduction, .home .home-main_section .home-main_section_developer {
   font-family: "Poppins";
   font-size: 32px;
   margin: 0 0 16px;
 }
 
-.home .home-main_section .developer {
+.home .home-main_section .home-main_section_developer {
   font-size: 72px;
   margin: 0 0 24px;
 }
@@ -119,44 +123,7 @@
   font-size: 40px;
 }
 
-/*  Projects
------------------------------------*/
-.projects {
-  background-image: url(../assets/sky.jpeg);
-  background-repeat: no-repeat;
-}
-
-/*  Skills
------------------------------------*/
-.skills {
-  background-image: url(../assets/sky.jpeg);
-  background-repeat: no-repeat;
-}
-
-/*  About
------------------------------------*/
-.about {
-  background-image: url(../assets/sky.jpeg);
-  background-repeat: no-repeat;
-}
-
-/*  Contact
------------------------------------*/
-.contact {
-  background-image: url(../assets/sky.jpeg);
-  background-repeat: no-repeat;
-}
-
-/*****************************************************************
-~ Mobile media-queries (max-width: 767px)
-******************************************************************/
-@media only screen and (max-width: 767px) {
-  .page__description h1 {
-    margin-top: 100px;
-  }
-}
-
-.glow-on-hover {
+.home .home-main_section .home-main_section_button {
   width: 220px;
   height: 50px;
   border: none;
@@ -173,7 +140,7 @@
   font-size: 15px;
 }
 
-.glow-on-hover:before {
+.home .home-main_section .home-main_section_button:before {
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
@@ -194,19 +161,15 @@
   opacity: 1;
 }
 
-.glow-on-hover:active {
+.home .home-main_section .home-main_section_button:active {
   color: #000;
 }
 
-.glow-on-hover:active:after {
+.home .home-main_section .home-main_section_button:active:after {
   background: transparent;
 }
 
-/*
-.glow-on-hover:hover:before {
-    opacity: 1;
-}*/
-.glow-on-hover:after {
+.home .home-main_section .home-main_section_button:after {
   z-index: -1;
   content: '';
   position: absolute;
@@ -242,6 +205,13 @@
   }
 }
 
+/*  About
+-----------------------------------*/
+.about {
+  background-image: url(../assets/sky.jpeg);
+  background-repeat: no-repeat;
+}
+
 .container-about, .container-skills, .container-projects, .container-contact {
   margin: 100px 40px;
   width: auto;
@@ -255,7 +225,6 @@
   margin: 20px;
   width: 400px;
   border-radius: 20px;
-  /*Important!!! using flex:1 to show the ratio of flex*/
 }
 
 .container-about h6, .container-skills h6, .container-projects h6, .container-contact h6 {
@@ -306,6 +275,13 @@
   font-size: 3em;
   margin-top: 10px;
   cursor: pointer;
+}
+
+/*  Skills
+-----------------------------------*/
+.skills {
+  background-image: url(../assets/sky.jpeg);
+  background-repeat: no-repeat;
 }
 
 .container-skills {
@@ -360,6 +336,13 @@
 
 .container-skills .skill_name {
   margin-left: 20px;
+}
+
+/*  Projects
+-----------------------------------*/
+.projects {
+  background-image: url(../assets/sky.jpeg);
+  background-repeat: no-repeat;
 }
 
 .container-projects {
@@ -423,6 +406,13 @@
 
 .container-projects .projects_explain {
   margin-right: 125px;
+}
+
+/*  Contact
+-----------------------------------*/
+.contact {
+  background-image: url(../assets/sky.jpeg);
+  background-repeat: no-repeat;
 }
 
 .container-contact {
